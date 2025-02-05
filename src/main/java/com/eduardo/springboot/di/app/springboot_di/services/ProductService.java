@@ -6,5 +6,5 @@ import com.eduardo.springboot.di.app.springboot_di.models.Product;
 
 public interface ProductService {
     List<Product> findAll();
-    Product findById(Long id)
+    Product findById(Long id);
 }

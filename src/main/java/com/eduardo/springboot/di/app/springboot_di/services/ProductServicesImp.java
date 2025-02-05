@@ -3,11 +3,16 @@ package com.eduardo.springboot.di.app.springboot_di.services;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.eduardo.springboot.di.app.springboot_di.models.Product;
-import com.eduardo.springboot.di.app.springboot_di.repositories.ProductRepositoryImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import com.eduardo.springboot.di.app.springboot_di.models.Product;
+import com.eduardo.springboot.di.app.springboot_di.repositories.ProductRepository;
+
+@Component
 public class ProductServicesImp implements ProductService{
-    private ProductRepositoryImpl repository = new ProductRepositoryImpl();
+    @Autowired
+    private ProductRepository repository;
 
     @Override
     public List<Product> findAll(){
