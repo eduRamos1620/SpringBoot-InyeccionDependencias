@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Moto tvs 200",
+        "price": 490
+    },
+    {
+        "id": 2,
+        "name": "Moto Nk250",
+        "price": 690
+    },
+    {
+        "id": 3,
+        "name": "Moto benelli 200",
+        "price": 600
+    },
+    {
+        "id": 4,
+        "name": "Moto R15",
+        "price": 990
+    }
+]
